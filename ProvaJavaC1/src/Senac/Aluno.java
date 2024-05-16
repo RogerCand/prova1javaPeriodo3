@@ -1,6 +1,6 @@
 package Senac;
 
-import org.jetbrains.annotations.NotNull;
+
 
 import java.util.HashSet;
 
@@ -30,7 +30,7 @@ public abstract class Aluno extends  PessoaAcademica{
                 '}';
     }
 
-    public void inscreverEmDisciplinas(@NotNull final HashSet<Disciplina> disciplinas) {
+    public void inscreverEmDisciplinas(final HashSet<Disciplina> disciplinas) {
         for (Disciplina disciplina : disciplinas) {
             // Ocorreria uma validação aqui
             inscreverEmDisciplina(disciplina);
@@ -38,7 +38,7 @@ public abstract class Aluno extends  PessoaAcademica{
         }
     }
 
-    public void inscreverEmDisciplina(@NotNull final Disciplina disciplina) {
+    public void inscreverEmDisciplina(final Disciplina disciplina) {
         disciplinasInscrito.add(disciplina);
         System.out.printf("O aluno %s se inscreveu na disciplina: %s\n", this.getNome(), disciplina.getNome());
     }
@@ -53,10 +53,10 @@ public abstract class Aluno extends  PessoaAcademica{
         }
     }
 
-    public Aluno(@NotNull final String nome, @NotNull final String cpf, @NotNull final String matricula, @NotNull final String telefone, @NotNull final String email, @NotNull final String endereco) {
+    public Aluno(final String nome, final String cpf,final String matricula, final String telefone, final String email, final String endereco) {
         super(nome, cpf, matricula, telefone, email, endereco);
     }
-    public Aluno(@NotNull final String nome, @NotNull final String cpf, @NotNull final String matricula, @NotNull final String telefone, @NotNull final String email, @NotNull final String endereco, @NotNull final HashSet<Disciplina> disciplinas) {
+    public Aluno(final String nome, final String cpf, final String matricula,final String telefone, final String email, final String endereco, final HashSet<Disciplina> disciplinas) {
         super(nome, cpf, matricula, telefone, email, endereco);
         this.inscreverEmDisciplinas(disciplinas);
     }

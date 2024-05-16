@@ -1,6 +1,6 @@
 package Senac;
 
-import org.jetbrains.annotations.NotNull;
+
 
 public class Disciplina {
     private String nome;
@@ -11,7 +11,7 @@ public class Disciplina {
         return professor;
     }
 
-    public void setProfessor(@NotNull final Professor professor) {
+    public void setProfessor(final Professor professor) {
         this.professor = professor;
     }
 
@@ -19,7 +19,7 @@ public class Disciplina {
         return this.nome;
     }
 
-    public void setNome(@NotNull final String nome) {
+    public void setNome( final String nome) {
         this.nome = nome;
     }
 
@@ -27,7 +27,7 @@ public class Disciplina {
         return codigo;
     }
 
-    public void setCodigo(@NotNull final String codigo) {
+    public void setCodigo( final String codigo) {
         this.codigo = codigo;
     }
 
@@ -48,13 +48,13 @@ public class Disciplina {
         }
     }
 
-    public Disciplina(@NotNull final String nome, @NotNull final String codigo, @NotNull final Professor professor) {
+    public Disciplina(final String nome,  final String codigo, final Professor professor) {
         this.setProfessor(professor);
         this.setNome(nome);
         this.setCodigo(codigo);
     }
 
-    public Disciplina(@NotNull final String nome, @NotNull final String codigo) {
+    public Disciplina(final String nome, final String codigo) {
         this.setNome(nome);
         this.setCodigo(codigo);
     }

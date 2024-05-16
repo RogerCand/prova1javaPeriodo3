@@ -5,34 +5,34 @@ import Senac.AlunoPosGraduacao;
 
 public class Main {
     public static void main(String[] args) {
-        Disciplina disciplinaJava = new Disciplina("Java", "01");
-        Professor Clayton = new Professor("Clayton", "12345678901", "MAT123", "987654321", "clayton@example.com", "Endereço do Clayton", disciplinaJava);
-        AlunoGraduacao Guilherme = new AlunoGraduacao("Guilherme", "12345678901", "MAT001", "987654321", "guilherme@example.com", "Barra");
-        AlunoPosGraduacao Maria = new AlunoPosGraduacao("Maria", "98765432109", "MAT002", "123456789", "maria@example.com", "Endereço da Maria");
-        Professor Jadson = new Professor();
+        Disciplina disciplinaJS = new Disciplina("JS", "06");
+        Professor Lauro = new Professor("Lauro", "12345678901", "MAT1002", "21941253652", "laurin@example.com", "Tijuca", disciplinaJS);
+        AlunoGraduacao Jemerson = new AlunoGraduacao("Jermerson", "21936982147", "MAT157", "987654321", "jamer@example.com", "Barra");
+        AlunoPosGraduacao Fernanda = new AlunoPosGraduacao("Fernanda", "21945878965", "MAT168", "21975241524", "fernanda@example.com", "Copacabana");
+        Professor Breno = new Professor();
 
-        Jadson.setNome("Jadson");
-        Jadson.setCpf("98765432109");
-        Jadson.setMatricula("MAT456");
-        Jadson.setTelefone("123456789");
-        Jadson.setEmail("jad@hotmail.com");
-        Jadson.setEndereco("Senac");
+        Breno.setNome("Breno");
+        Breno.setCpf("52365248510");
+        Breno.setMatricula("MAT1001");
+        Breno.setTelefone("21985246325");
+        Breno.setEmail("breno@hotmail.com");
+        Breno.setEndereco("Vila Isabel");
 
-        Guilherme.inscreverEmDisciplina(disciplinaJava);
-        Disciplina ProgCpp = new Disciplina("C++", "56");
-        Jadson.addDisciplinaMinistrada(ProgCpp);
-        Clayton.aplicarAvaliacao(disciplinaJava, "Módulo 3");
+        Jemerson.inscreverEmDisciplina(disciplinaJS);
+        Disciplina ProgCpp = new Disciplina("Java", "01");
+        Breno.addDisciplinaMinistrada(ProgCpp);
+        Lauro.aplicarAvaliacao(disciplinaJS, "Módulo 3");
 
 
-        Clayton.lancarNota(Guilherme, disciplinaJava, 10f);
-        Clayton.lancarFrequencia(Guilherme, 95, disciplinaJava);
+        Lauro.lancarNota(Jemerson, disciplinaJS, 10f);
+        Lauro.lancarFrequencia(Jemerson, 95, disciplinaJS);
 
         System.out.println("\n\n\n");
 
-        System.out.println(disciplinaJava);
-        System.out.println(Clayton);
-        System.out.println(Jadson);
-        System.out.println(Guilherme);
-        System.out.println(Maria);
+        System.out.println(disciplinaJS);
+        System.out.println(Lauro);
+        System.out.println(Breno);
+        System.out.println(Jemerson);
+        System.out.println(Fernanda);
     }
 }

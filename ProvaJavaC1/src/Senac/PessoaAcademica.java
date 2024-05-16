@@ -1,6 +1,6 @@
 package Senac;
 
-import org.jetbrains.annotations.NotNull;
+
 
 public abstract class PessoaAcademica {
     protected String nome;
@@ -15,7 +15,7 @@ public abstract class PessoaAcademica {
         return nome;
     }
 
-    public void setNome(@NotNull final String nome) {
+    public void setNome(final String nome) {
         this.nome = nome;
     }
 
@@ -23,7 +23,7 @@ public abstract class PessoaAcademica {
         return cpf;
     }
 
-    public void setCpf(@NotNull final String cpf) {
+    public void setCpf(final String cpf) {
         this.cpf = cpf;
     }
 
@@ -31,7 +31,7 @@ public abstract class PessoaAcademica {
         return matricula;
     }
 
-    public void setMatricula(@NotNull final String matricula) {
+    public void setMatricula(final String matricula) {
         this.matricula = matricula;
     }
 
@@ -39,7 +39,7 @@ public abstract class PessoaAcademica {
         return telefone;
     }
 
-    public void setTelefone(@NotNull final String telefone) {
+    public void setTelefone(final String telefone) {
         this.telefone = telefone;
     }
 
@@ -47,7 +47,7 @@ public abstract class PessoaAcademica {
         return email;
     }
 
-    public void setEmail(@NotNull final String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
@@ -55,11 +55,11 @@ public abstract class PessoaAcademica {
         return endereco;
     }
 
-    public void setEndereco(@NotNull final String endereco) {
+    public void setEndereco(final String endereco) {
         this.endereco = endereco;
     }
 
-    public PessoaAcademica(@NotNull final String nome, @NotNull final String cpf, @NotNull final String matricula, @NotNull final String telefone, @NotNull final String email, @NotNull final String endereco) {
+    public PessoaAcademica( final String nome,  final String cpf,  final String matricula, final String telefone,  final String email,  final String endereco) {
         this.setNome(nome);
         this.setCpf(cpf);
         this.setMatricula(matricula);
